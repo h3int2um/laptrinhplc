@@ -1,0 +1,37 @@
+\documentclass[12pt, border=12pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{type1cm}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{comment}
+\usepackage[unicode]{hyperref}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\usetikzlibrary{arrows, decorations.markings, calc, fadings, decorations.pathreplacing, patterns, decorations.pathmorphing, positioning}	
+%\tikzstyle{every path}=[line width=1.2pt]
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.5 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+\begin{document}
+	\begin{tikzpicture}[>=triangle 45]
+		\draw[ultra thick] (8.5,-11.5) -- (8.5,-17);
+		\draw (8.5,-18.5) node{$~$};	
+						
+		\draw (8.5,-12) -- (9.3,-12) -- (9.3,-11.5); \draw (9.7,-11.5) -- (9.7,-12) -- (10.2,-12); \draw (9.5,-11.5) node[above]{$y_7$};  \draw (10.2,-11.8) -- (10.6,-11.8); \draw (10.4,-11.8) node[above] {$d_{1}$}; \draw (10.6,-12) -- (11.1,-12) -- (11.1,-11.5); \draw (11.5,-11.5) -- (11.5,-12) -- (11.9,-12); \draw (11.3,-11.5) node[above]{$y_{11}$};  \draw (11.9,-11.8) --  (12.3,-11.8); \draw (12.1,-11.8) node[above]{$h_{1}$}; \draw (12.3,-12) -- (13.7,-12) -- (13.7,-11.5); \draw (14.1,-11.5) -- (14.1,-12); \draw (13.5,-11.7) -- (14.3, -11.7); \draw (13.9,-11.5) node[above]{$y_{13}$}; \draw (14.1,-12) -- (15.1,-12); \draw (15.1,-12) arc (180:120:.5);\draw (15.1,-12) arc (180:240:.5); \draw (16.1,-12) arc (0:60:.5);\draw (16.1,-12) arc (0:-60:.5); \draw (15.6,-12) node{$y_{12}$}; \draw (8.5,-13.5) -- (10.4,-13.5) -- (10.4,-13); \draw (10.8,-13) -- (10.8,-13.5) -- (12.7,-13.5) -- (12.7,-12); \draw (10.6,-13) node[above]{$y_{12}$};
+						
+		\draw (8.5,-15) -- (9.3,-15) -- (9.3,-14.5); \draw (9.7,-14.5) -- (9.7,-15) -- (11.5,-15); \draw (9.5,-14.5) node[above]{$y_{12}$};  \draw (11.5,-14.8) -- (11.9,-14.8); \draw(11.7,-14.8) node[above]{$b_2$}; \draw (11.9,-15) -- (12.7,-15); \draw (12.7,-15) -- (13.7,-15)-- (13.7,-14.5); \draw (14.1,-14.5) -- (14.1,-15)-- (15.1,-15); \draw (13.5,-14.7) -- (14.3, -14.7); \draw (13.9,-14.5) node[above]{$y_{14}$}; \draw (15.1,-15) arc (180:120:.5);\draw (15.1,-15) arc (180:240:.5); \draw (16.1,-15) arc (0:60:.5);\draw (16.1,-15) arc (0:-60:.5); \draw (15.6,-15) node{$y_{13}$}; \draw (8.5,-16.5) -- (10.4,-16.5) -- (10.4,-16); \draw (10.8,-16) -- (10.8,-16.5)  -- (12.7,-16.5) -- (12.7,-15); \draw (10.6,-16) node[above]{$y_{13}$};		
+	\end{tikzpicture}
+\end{document}

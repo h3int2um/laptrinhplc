@@ -1,0 +1,39 @@
+\documentclass[12pt, border=12pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{type1cm}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{comment}
+\usepackage[unicode]{hyperref}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\usetikzlibrary{arrows, decorations.markings, calc, fadings, decorations.pathreplacing, patterns, decorations.pathmorphing, positioning}	
+%\tikzstyle{every path}=[line width=1.2pt]
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.5 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+\begin{document}
+	\begin{tikzpicture}[>=triangle 45]
+		\draw[ultra thick] (0,-8.5) -- (0,-14);
+		\draw (0,-16.5) node{$~$};	
+		\draw (0,-9) -- (0.8,-9) -- (0.8,-8.5); \draw (1.2,-8.5) -- (1.2,-9) -- (3,-9); \draw (1,-8.5) node[above]{$y_1$};  \draw (3,-8.8) -- (3.4,-8.8); \draw(3.2,-8.8) node[above]{$d_2$}; \draw (3.4,-9) -- (4.2,-9); \draw (4.2,-9) -- (5.2,-9)-- (5.2,-8.5); \draw (5.6,-8.5) -- (5.6,-9) -- (6.6,-9); \draw (5,-8.7) -- (5.8, -8.7); \draw (5.4,-8.5) node[above]{$y_3$}; \draw (6.6,-9) arc (180:120:.5);\draw (6.6,-9) arc (180:240:.5); \draw (7.6,-9) arc (0:60:.5);\draw (7.6,-9) arc (0:-60:.5); \draw (7.1,-9) node{$y_2$}; \draw (0,-10.5) -- (1.9,-10.5) -- (1.9,-10); \draw (2.3,-10) -- (2.3,-10.5) -- (4.2,-10.5) -- (4.2,-9); \draw (2.1,-10) node[above]{$y_2$};
+						
+		\draw (0,-12) -- (0.8,-12) -- (0.8,-11.5); \draw (1.2,-11.5) -- (1.2,-12) -- (3,-12); \draw (1,-11.5) node[above]{$y_2$}; \draw (3,-11.8) -- (3.4,-11.8); \draw(3.2,-11.8) node[above]{$g_2$}; \draw (3.4,-12) -- (4.2,-12); 
+		\draw (4.2,-12) -- (4.6,-12)-- (4.6,-11.5); \draw (5,-11.5) -- (5,-12) -- (5.6,-12); \draw (4.4,-11.7) -- (5.2, -11.7); \draw (4.8,-11.5) node[above]{$y_4$}; 
+		\draw  (5.6,-12)-- (5.6,-11.5); \draw (6,-11.5) -- (6,-12) -- (6.6,-12); \draw (5.4,-11.7) -- (6.2, -11.7); \draw (5.8,-11.5) node[above]{$y_1$}; 
+		\draw (6.6,-12) arc (180:120:.5);\draw (6.6,-12) arc (180:240:.5); \draw (7.6,-12) arc (0:60:.5);\draw (7.6,-12) arc (0:-60:.5); \draw (7.1,-12) node{$y_3$}; \draw (0,-13.5) -- (1.9,-13.5) -- (1.9,-13); \draw (2.3,-13) -- (2.3,-13.5) -- (4.2,-13.5) -- (4.2,-12); \draw (2.1,-13) node[above]{$y_3$};
+	\end{tikzpicture}
+\end{document}

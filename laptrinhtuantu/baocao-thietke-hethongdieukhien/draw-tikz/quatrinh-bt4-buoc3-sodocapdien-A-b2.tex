@@ -1,0 +1,37 @@
+\documentclass[12pt, border=12pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{type1cm}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{comment}
+\usepackage[unicode]{hyperref}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\usetikzlibrary{arrows, decorations.markings, calc, fadings, decorations.pathreplacing, patterns, decorations.pathmorphing, positioning}	
+%\tikzstyle{every path}=[line width=1.2pt]
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.5 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+\begin{document}
+	\begin{tikzpicture}[>=triangle 45]
+		\draw[ultra thick] (0,0.5) -- (0,-5);
+		\draw (0,0) -- (1.9,0) -- (1.9,0.5); \draw (2.2,0.5) node[above]{$y_1$}; \draw (2.3,0.5) -- (2.3,0) -- (4.2,0) -- (5.6,0);
+		\draw (0,-1.5) -- (1.9,-1.5) -- (1.9,-1); \draw (2.2,-1) node[above]{$y_2$}; \draw (2.3,-1) -- (2.3,-1.5) -- (4.2,-1.5);
+		\draw (0,-3) -- (0.8,-3) -- (0.8,-2.5); \draw (1.2,-2.5) -- (1.2,-3) -- (3,-3); \draw (1,-2.5) node[above]{$y_3$}; \draw (3,-3.2) -- (3.4,-3.2); \draw(3.2,-2.8) node[above]{$g_1$}; \draw (3.4,-3) -- (4.2,-3);
+		\draw (0,-4.5) -- (1.9,-4.5) -- (1.9,-4); \draw (2.2,-4) node[above]{$y_4$}; \draw (2.3,-4) -- (2.3,-4.5) -- (4.2,-4.5) -- (4.2,0);
+		\draw (5.6,0) arc (180:120:.5);\draw (5.6,0) arc (180:240:.5); \draw (6.6,0) arc (0:60:.5);\draw (6.6,0) arc (0:-60:.5); \draw (6.1,0) node{$A$};
+	\end{tikzpicture}
+\end{document}

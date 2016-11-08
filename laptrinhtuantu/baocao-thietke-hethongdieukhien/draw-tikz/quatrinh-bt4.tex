@@ -1,0 +1,35 @@
+\documentclass[12pt, border=12pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{type1cm}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{comment}
+\usepackage[unicode]{hyperref}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\usetikzlibrary{arrows, decorations.markings, calc, fadings, decorations.pathreplacing, patterns, decorations.pathmorphing, positioning}	
+%\tikzstyle{every path}=[line width=1.2pt]
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.5 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+\begin{document}
+	\begin{tikzpicture}[>=triangle 45]
+		\draw (5,0) node {\small{$Start~A+D+D-G+G-A-A+B+A-B-\left\{\begin{array}{c}D+E+E-D-\\ \\G+G-H+H-\end{array}\right\}E+B+B-H+E-H-$}};
+		\draw (1.9,-0.2) -- (1.9,-1) -- (-2.7,-1); \draw (-0.4,-1) node[above]{$2 \textrm{ lần }$};
+						
+		\draw (13.8,-0.2) -- (13.8,-2) -- (-2.7,-2); \draw[->](-2.7,-2) -- (-2.7,-0.2); \draw (12.55,-2) node[above]{$\overline{Stop}$};
+	\end{tikzpicture}
+\end{document}
